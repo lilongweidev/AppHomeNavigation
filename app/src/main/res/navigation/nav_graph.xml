@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/afragment">
+
+    <!--添加动作-->
+    <action
+        android:id="@+id/action_afragment_to_bfragment"
+        app:destination="@id/bfragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
+    <!--AFragment-->
+    <fragment
+        android:id="@+id/afragment"
+        android:name="com.llw.navigation.fragment.AFragment"
+        android:label="afragment"
+        tools:layout="@layout/fragment_a">
+
+    </fragment>
+    <!--BFragment-->
+    <fragment
+        android:id="@+id/bfragment"
+        android:name="com.llw.navigation.fragment.BFragment"
+        android:label="bfragment"
+        tools:layout="@layout/fragment_b" />
+    <!--CFragment-->
+    <fragment
+        android:id="@+id/cfragment"
+        android:name="com.llw.navigation.fragment.CFragment"
+        android:label="cfragment"
+        tools:layout="@layout/fragment_c" />
+    <!--DFragment-->
+    <fragment
+        android:id="@+id/dfragment"
+        android:name="com.llw.navigation.fragment.DFragment"
+        android:label="dfragment"
+        tools:layout="@layout/fragment_d" />
+    <!--EFragment-->
+    <fragment
+        android:id="@+id/efragment"
+        android:name="com.llw.navigation.fragment.EFragment"
+        android:label="efragment"
+        tools:layout="@layout/fragment_e" />
+</navigation>
